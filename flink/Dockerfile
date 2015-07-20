@@ -1,4 +1,4 @@
-FROM base
+FROM dockerfile/java:oracle-java8
 
 #add passless key to ssh
 #RUN ssh-keygen -f ~/.ssh/id_rsa -t rsa -N ''
