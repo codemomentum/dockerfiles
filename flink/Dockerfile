@@ -14,7 +14,7 @@ ENV FLINK_HOME /usr/local/flink
 ENV PATH $PATH:$FLINK_HOME/bin
 
 #config files (template)
-ADD conf/flink-conf.yaml /usr/local/flink/conf/
+ADD flink-0.9.0/conf/flink-conf.yaml /usr/local/flink/conf/
 
 ADD config-flink.sh /usr/local/flink/bin/
 RUN chmod +x /usr/local/flink/bin/config-flink.sh
