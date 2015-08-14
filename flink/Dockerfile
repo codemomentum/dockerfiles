@@ -1,8 +1,4 @@
-FROM dockerfile/java:oracle-java8
-
-#add passless key to ssh
-#RUN ssh-keygen -f ~/.ssh/id_rsa -t rsa -N ''
-#RUN cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/*
+FROM java:8
 
 ##Flink 0.9.0 Installation
 ###Download:
@@ -12,12 +8,6 @@ RUN cd /usr/local && ln -s ./flink-0.9.0 flink
 
 ENV FLINK_HOME /usr/local/flink
 ENV PATH $PATH:$FLINK_HOME/bin
-
-#config files (template)
-#ADD conf/flink-conf.yaml /usr/local/flink/conf/
-
-#ADD config-flink.sh /usr/local/flink/bin/
-#RUN chmod +x /usr/local/flink/bin/config-flink.sh
 
 EXPOSE 8081
 
