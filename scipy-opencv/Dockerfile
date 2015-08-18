@@ -4,8 +4,8 @@ FROM ipython/scipyserver
 #
 # Image based on ipython/scipyserver
 #
-#   added OpenCV 3 (built)
-#   plus prerequisites...
+#
+# docker run -d -p 444:8888 -e "PASSWORD=ASD" --volumes-from scipy-data l0rth0s/scipyserver
 #######################################
 
 # Install opencv prerequisites...
