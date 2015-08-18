@@ -1,8 +1,6 @@
-###Forked
+###Forked form: https://hub.docker.com/r/trafferty/docker-ipython-opencv/~/dockerfile/
 
 FROM ipython/scipyserver
-
-MAINTAINER Tom Rafferty <traff.td@gmail.com>
 
 ########################################
 #
