@@ -17,10 +17,5 @@ RUN apt-get update -qq && apt-get install -y --force-yes \
 RUN pip2 install imutils
 RUN pip3 install imutils
 
-# =================================
-
-# Remove all tmpfile
-# =================================
-WORKDIR /usr/local/
-RUN rm -rf /usr/local/src
-# =================================
+VOLUME /notebooks
+WORKDIR /notebooks
