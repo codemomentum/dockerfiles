@@ -16,6 +16,7 @@ RUN apt-get update -qq && apt-get install -y --force-yes \
             libopencv-dev \
             python-opencv;
 
+
 # Additional python modules
 RUN pip2 install imutils
 RUN pip3 install imutils
