@@ -20,14 +20,27 @@ RUN apt-get update -qq && apt-get install -y --force-yes \
 # Additional python modules
 RUN pip2 install imutils
 RUN pip3 install imutils
+
 #RUN pip2 install bokeh
 #RUN pip3 install bokeh
+
 RUN pip2 install ggplot
 RUN pip3 install ggplot
+
 RUN pip2 install mpld3
 RUN pip3 install mpld3
+
 RUN pip2 install vincent
 RUN pip3 install vincent
+
+RUN pip2 pip install keras
+RUN pip3 pip install keras
+
+
+
+
+
+
 
 
 VOLUME /notebooks
