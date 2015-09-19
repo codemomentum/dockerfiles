@@ -33,8 +33,8 @@ RUN pip3 install mpld3
 RUN pip2 install vincent
 RUN pip3 install vincent
 
-RUN pip2 pip install keras
-RUN pip3 pip install keras
+RUN pip2 install keras
+RUN pip3 install keras
 
 
 
