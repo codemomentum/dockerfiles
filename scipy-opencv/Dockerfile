@@ -39,6 +39,7 @@ RUN pip3 install keras
 
 RUN pip2 install textblob
 RUN pip3 install textblob
+RUN curl https://raw.github.com/sloria/TextBlob/master/download_corpora.py | python
 
 
 
