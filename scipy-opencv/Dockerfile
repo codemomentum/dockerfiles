@@ -37,7 +37,8 @@ RUN pip2 install keras
 RUN pip3 install keras
 
 
-
+RUN pip2 install textblob
+RUN pip3 install textblob
 
 
 
