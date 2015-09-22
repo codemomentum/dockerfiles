@@ -21,8 +21,8 @@ RUN apt-get update -qq && apt-get install -y --force-yes \
 RUN pip2 install imutils
 RUN pip3 install imutils
 
-#RUN pip2 install bokeh
-#RUN pip3 install bokeh
+RUN pip2 install bokeh
+RUN pip3 install bokeh
 
 RUN pip2 install ggplot
 RUN pip3 install ggplot
