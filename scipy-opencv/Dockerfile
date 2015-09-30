@@ -36,11 +36,12 @@ RUN pip3 install vincent
 RUN pip2 install keras
 RUN pip3 install keras
 
-
 RUN pip2 install textblob
 RUN pip3 install textblob
 RUN python -m textblob.download_corpora
 
+RUN pip2 install seaborn
+RUN pip3 install seaborn
 
 
 
