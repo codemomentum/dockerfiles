@@ -46,8 +46,8 @@ RUN pip3 install seaborn
 RUN pip2 install ipywidgets
 RUN pip3 install ipywidgets
 
-RUN pip2 install follium
-RUN pip3 install follium
+RUN pip2 install folium
+RUN pip3 install folium
 
 VOLUME /notebooks
 WORKDIR /notebooks
