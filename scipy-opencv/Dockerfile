@@ -43,8 +43,11 @@ RUN python -m textblob.download_corpora
 RUN pip2 install seaborn
 RUN pip3 install seaborn
 
+RUN pip2 install ipywidgets
+RUN pip3 install ipywidgets
 
-
+RUN pip2 install follium
+RUN pip3 install follium
 
 VOLUME /notebooks
 WORKDIR /notebooks
