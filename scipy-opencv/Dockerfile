@@ -52,7 +52,7 @@ RUN pip3 install folium
 RUN pip2 install boto
 RUN pip3 install boto
 
-
+RUN python -m nltk.downloader all-corpora
 
 VOLUME /notebooks
 WORKDIR /notebooks
