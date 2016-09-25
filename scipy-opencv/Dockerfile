@@ -54,5 +54,11 @@ RUN pip3 install boto
 
 RUN python -m nltk.downloader all-corpora
 
+RUN pip2 install -r https://raw.githubusercontent.com/automl/auto-sklearn/master/requirements.txt
+RUN pip3 install -r https://raw.githubusercontent.com/automl/auto-sklearn/master/requirements.txt
+
+RUN pip2 install auto-sklearn
+RUN pip3 install auto-sklearn
+
 VOLUME /notebooks
 WORKDIR /notebooks
