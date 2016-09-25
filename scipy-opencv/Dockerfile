@@ -52,7 +52,7 @@ RUN pip3 install folium
 RUN pip2 install boto
 RUN pip3 install boto
 
-RUN python -m nltk.downloader all-corpora
+# RUN python -m nltk.downloader all-corpora
 
 RUN pip2 install -r https://raw.githubusercontent.com/automl/auto-sklearn/master/requirements.txt
 RUN pip3 install -r https://raw.githubusercontent.com/automl/auto-sklearn/master/requirements.txt
